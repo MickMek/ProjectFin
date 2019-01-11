@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>ProjectFin</title>
+</head>
+<body>
+        <h1>ProjectFin - S&P500 Stocks Analysis</h1>
+        <p>================================================</p>
+        <p>=================================================</p>
+        <form method="POST">
+                <p><b>Plot</b> the historical price of the desired S&P500 stock, and <b>Predict</b> its future direction</p>
+                <p><i>First, select desired S&P500 stock</i></p>
+                {% csrf_token %}
+                <br><label><b>Asset:</b></label><br />
+                {{ form.asset }}
+                <input type="submit">
+                <p>&nbsp;</p>
+                <p>You can also conduct a Markowitz Portfolio analysis on the stocks</p>
+                <button><a href="/projectfin/frontierplot">S&P500 Portfolio Optimization</a></button>
+                <button><a href="/projectfin/clusterplot">S&P500 Cluster Analysis Plot</a></button>
+                <p>====================================</p>
+        </form>
+</body>

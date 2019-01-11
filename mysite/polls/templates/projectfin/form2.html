@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>ProjectFin</title>
+</head>
+<body>
+        <h1>ProjectFin - Cryptocurrencies Analysis</h1>
+        <p>================================================</p>
+        <p>=================================================</p>
+        <form method="POST">
+                <p><b>Plot</b> the historical price of the desired crytpocurrency, and <b>Predict</b> its future direction</p>
+                <p><i>First, select desired cryptocurrency</i></p>
+                {% csrf_token %}
+                <br><label><b>Cryptocurrency:</b></label><br />
+                {{ form.asset }}
+                <input type="submit">
+                <p>&nbsp;</p>
+                <p>You can also conduct a Markowitz Portfolio analysis on the cryptos</p>
+                <button><a href="/projectfin/cfrontierplot">Cryptos Portfolio Optimization</a></button>
+                <p>====================================</p>
+        </form>
+</body>
