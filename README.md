@@ -46,3 +46,12 @@ python manage.py runserver
 
 You can then open your webbrowser, and go to
 ``` localhost:8000 ```
+
+
+## Some screenshots
+(Plots with plotly)
+
+![Alt text](/screenshots/img1.png?raw=true "S&P500 clusters")
+![Alt text](/screenshots/img2.png?raw=true "AAPL Monte carlo")
+![Alt text](/screenshots/img3.png?raw=true "S&P500 portfolio optimization")
+![Alt text](/screenshots/img4.png?raw=true "MMM stock prices")
