@@ -1,0 +1,4 @@
+0 * * * * python3 ./1-btc_order_book_monitor/scripts/1.2-mick-recording_best_bid_ask.py && curl -fsS --retry 3 https://hc-ping.com/123-123-123-123 > /dev/null
+1 * * * * python3 ./1-btc_order_book_monitor/scripts/1.3-mick-recording_lobs.py         && curl -fsS --retry 3 https://hc-ping.com/123-123-123-123 > /dev/null
+2 * * * * python3 ./1-btc_order_book_monitor/scripts/2.2-mick-market_eye.py             && curl -fsS --retry 3 https://hc-ping.com/123-123-123-123 > /dev/null
+
