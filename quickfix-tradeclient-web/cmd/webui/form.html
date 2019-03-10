@@ -1,0 +1,83 @@
+{{if .Success}}
+	<h1>Order Accepted!</h1>
+{{else}}
+	<h1>Order Details</h1>
+    <form>
+        <INPUT TYPE="BUTTON" VALUE="See BTCUSD Price" ONCLICK="window.location.href='http://ssoc18.teamshadi.net:5004/view/'"> 
+    </form>
+        
+	<form method="POST">
+
+        <label><b>Action:</b></label><br />
+		<select id="action" name="action">
+			<option value="1">Enter New Order</option>
+			<option value="2">Cancel Order</option>
+			<option value="3">Market Data Request</option>
+			<option value="4">Quit</option>
+		</select><br />
+        <p>&nbsp;</p>
+        <label><b>Version:</b></label><br />
+		<select id="version" name="version">
+			<option value="1">FIX 4.0</option>
+			<option value="2">FIX 4.1</option>
+			<option value="3">FIX 4.2</option>
+			<option value="4">FIX 4.3</option>
+			<option value="5">FIX 4.4</option>
+			<option value="6">FIX 1.1</option>
+		</select><br />
+        <p>&nbsp;</p>
+        <label><b>ClOrdId:</b></label><br />
+		<input type="text" name="clordid"><br />
+        <p>&nbsp;</p>
+        <label><b>Price:</b></label>
+        <p><i>Only accepting maximum 5% deviation from current live price</i></p>
+		<input type="text" name="price"><br />
+        <p>&nbsp;</p>
+		<label><b>Symbol:</b></label>
+        <p><i>Only accepting BTCUSD trades</i></p>
+		<input type="text" name="symbol"><br />
+        <p>&nbsp;</p>
+        <label><b>OrderQty:</b></label>
+        <p><i>Only accepting less than 100</i></p>
+		<input type="text" name="ordqty"><br />
+        <p>&nbsp;</p>
+        <label><b>Side:</b></label><br />
+		<select id="side" name="side">
+			<option value="1">Buy</option>
+			<option value="2">Sell</option>
+			<option value="3">Sell Short</option>
+			<option value="4">Sell Short Exempt</option>
+			<option value="5">Cross</option>
+			<option value="6">Cross Short</option>
+			<option value="7">Cross Short Exempt</option>
+		</select><br />
+        <p>&nbsp;</p>
+        <label><b>OrdType:</b></label>		
+        <p><i>Limit orders only</i></p>
+		<select id="ordtype" name="ordtype">
+			<option value="1">Market</option>
+			<option value="2">Limit</option>
+			<option value="3">Stop</option>
+			<option value="4">Stop Limit</option>
+		</select><br />
+        <p>&nbsp;</p>
+        <label><b>TimeInForce:</b></label><br />
+		<select id="timeinforce" name="timeinforce">
+			<option value="1">Day</option>
+			<option value="2">IOC</option>
+			<option value="3">OPG</option>
+			<option value="4">GTC</option>
+			<option value="5">GTX</option>
+		</select><br />
+        <p>&nbsp;</p>
+        <label><b>SenderCompID:</b></label><br />
+		<input type="text" name="senderid"><br />
+        <p>&nbsp;</p>
+        <label><b>TargetCompID:</b></label><br />
+		<input type="text" name="targetid"><br />
+        <p>&nbsp;</p>
+        <label><b>TargetSubID:</b></label><br />
+		<input type="text" name="targetsubid"><br />
+		<input type="submit">
+	</form>
+{{end}}
