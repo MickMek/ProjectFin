@@ -51,7 +51,7 @@ You can then open your webbrowser, and go to
 ## Some screenshots
 (Plots with plotly)
 
-![Alt text](/screenshots/img1.png?raw=true "S&P500 clusters")
-![Alt text](/screenshots/img2.png?raw=true "AAPL Monte carlo")
-![Alt text](/screenshots/img3.png?raw=true "S&P500 portfolio optimization")
-![Alt text](/screenshots/img4.png?raw=true "MMM stock prices")
+![Alt text](mysite/screenshots/img1.png?raw=true "S&P500 clusters")
+![Alt text](mysite/screenshots/img2.png?raw=true "AAPL Monte carlo")
+![Alt text](mysite/screenshots/img3.png?raw=true "S&P500 portfolio optimization")
+![Alt text](mysite/screenshots/img4.png?raw=true "MMM stock prices")
