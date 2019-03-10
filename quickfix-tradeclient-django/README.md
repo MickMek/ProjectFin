@@ -51,8 +51,3 @@ Screenshots
 url `../form/` gives a form for users to input desired information for a trade with our quickfix tradeclient:
 
 ![/form](https://user-images.githubusercontent.com/40487507/43889986-39d01654-9bce-11e8-8515-2bb320bfa563.png)
-
-
-url `../form/plotly` is a scatterplot with dummy data, used for testing:
-
-![/plotly](https://user-images.githubusercontent.com/40487507/43890022-4ea04b8a-9bce-11e8-9f8a-f6b5ea065152.png)
